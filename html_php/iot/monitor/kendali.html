@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+  body {
+    background: linear-gradient(to top, #1d1d1d, #e97171, #1d1d1d);
+    font-family: Arial, sans-serif;
+  }
+
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #4caf50;
+  }
+</style>
+</head>
+<body>
+
+  <div class="button-container">
+    <a href="publish.php?message=D6=1"><button>D6 ON</button></a>
+    <a href="publish.php?message=D6=0"><button>D6 OFF</button></a>
+  </div>
+  <div class="button-container">
+    <a href="publish.php?message=D7=1"><button>D7 ON</button></a>
+    <a href="publish.php?message=D7=0"><button>D7 OFF</button></a>
+  </div>
+  <div class="button-container">
+    <a href="publish.php?message=D8=1"><button>D8 ON</button></a>
+    <a href="publish.php?message=D8=0"><button>D8 OFF</button></a>
+  </div>
+
+</body>
+</html>
